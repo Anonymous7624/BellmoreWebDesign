@@ -19,6 +19,7 @@ const WORK_LINKS = [
 
 const SERVICE_LINKS = [
   { label: 'Website Design', href: '/#services' },
+  { label: 'Mobile App Development', href: '/#services' },
   { label: 'Social Media Management', href: '/#services' },
   { label: 'Photography & Content', href: '/#services' },
 ];
@@ -57,7 +58,7 @@ export default function Footer() {
             <div>
               <Logo tone="light" />
               <p className="mt-4 text-sm text-white/60 leading-relaxed">
-                Nassau County web design, website development, social media, and on-site photography for local small businesses.
+                Nassau County web design, website development, mobile app development, social media, and on-site photography for local small businesses.
               </p>
               <ul className="mt-4 space-y-1.5 text-sm">
                 <li>

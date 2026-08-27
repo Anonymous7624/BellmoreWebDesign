@@ -13,16 +13,16 @@ export default function ServicesHome() {
             What I can help with
           </h2>
           <p className="mt-4 text-lg text-[#5F6B73] leading-relaxed">
-            Websites, social media, and photography. You can get one of them or all three.
+            Websites, mobile apps, social media, and photography. You can get one of them or combine them.
           </p>
         </Reveal>
 
-        <Stagger className="grid md:grid-cols-3 gap-6 items-stretch" stagger={0.12}>
+        <Stagger className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 items-stretch" stagger={0.1}>
           {SERVICES.map((service) => {
             const Icon = SERVICE_ICON[service.id as keyof typeof SERVICE_ICON];
             return (
               <StaggerItem key={service.id} className="h-full">
-                <div className="card-hover flex h-full flex-col rounded-2xl border border-[#E8DED0] bg-white p-7 shadow-soft">
+                <div className="card-hover flex h-full flex-col rounded-2xl border border-[#E8DED0] bg-white p-6 sm:p-7 lg:p-6 xl:p-7 shadow-soft">
                   <span
                     className="flex h-[52px] w-[52px] items-center justify-center rounded-2xl text-white shadow-soft"
                     style={{ background: service.accent }}
@@ -56,7 +56,8 @@ export default function ServicesHome() {
 
         <Reveal className="mt-8 mx-auto max-w-2xl rounded-2xl border border-[#E8DED0] bg-[#FAF7F0] px-6 py-4 text-center">
           <p className="text-sm text-[#5F6B73]">
-            Social media and content (the photos and short videos) usually go together in one monthly plan.
+            App features are examples of what I can build, not a set package. Social media and content (the
+            photos and short videos) usually go together in one monthly plan.
           </p>
         </Reveal>
 

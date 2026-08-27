@@ -27,6 +27,23 @@ export const SERVICES: Service[] = [
     ],
   },
   {
+    id: 'apps',
+    name: 'Mobile App Development',
+    tagline:
+      'Custom iOS and Android apps built around how your business actually runs. Examples of what an app can include:',
+    accent: '#1E2A38',
+    features: [
+      'iOS & Android apps',
+      'Customer accounts & logins',
+      'Online ordering',
+      'Booking & scheduling',
+      'Payments',
+      'Rewards & loyalty programs',
+      'Push notifications',
+      'Dashboards & API integrations',
+    ],
+  },
+  {
     id: 'social',
     name: 'Social Media Management',
     tagline:
@@ -76,7 +93,7 @@ export interface PricingPlan {
 export const WEBSITE_PLANS: PricingPlan[] = [
   {
     title: 'New Website',
-    price: 'Starting at $250',
+    price: 'Starting at $450',
     featured: true,
     badge: 'Most popular',
     cta: 'Get a Free Mockup',
@@ -94,7 +111,7 @@ export const WEBSITE_PLANS: PricingPlan[] = [
   },
   {
     title: 'Website Refresh',
-    price: 'Starting at $250',
+    price: 'Starting at $450',
     cta: 'Request Pricing',
     ctaHref: '/contact',
     features: [
@@ -107,9 +124,34 @@ export const WEBSITE_PLANS: PricingPlan[] = [
   },
 ];
 
-// Explains what the $250 covers and when a site costs more or has a monthly fee.
+// Explains what the $450 covers and when a site costs more or has a monthly fee.
 export const WEBSITE_PRICING_NOTE =
-  'The $250 start is for a basic frontend site that I can host for you. Extras like a contact form or a contact page need a backend, so they cost more. Bigger or content-heavy sites, or sites with a backend, may have a small monthly charge for hosting and upkeep.';
+  'The $450 start is for a basic frontend site that I can host for you. Extras like a contact form or a contact page need a backend, so they cost more. Bigger or content-heavy sites, or sites with a backend, may have a small monthly charge for hosting and upkeep.';
+
+export const APP_PLANS: PricingPlan[] = [
+  {
+    title: 'Mobile App Development',
+    price: 'Starting at $2,500',
+    badge: 'New',
+    cta: 'Talk About Your App',
+    ctaHref: '/contact',
+    note: 'Features are examples of what I can build, not a fixed package. Every app is quoted once we know what yours needs to do.',
+    features: [
+      'Custom iOS & Android apps',
+      'Customer accounts & logins',
+      'Online ordering, booking & scheduling',
+      'Payments & rewards programs',
+      'Push notifications',
+      'Business dashboards & backend integrations',
+      'API integrations with tools you already use',
+      'Custom features built around your business',
+    ],
+  },
+];
+
+// Sets expectations for app pricing, which moves a lot more than website pricing.
+export const APP_PRICING_NOTE =
+  'App projects start at $2,500 and are quoted after we map out what the app needs to do. A simple app with accounts and booking sits near the start, and things like ordering, payments, rewards, or a backend dashboard raise it from there.';
 
 export const MONTHLY_PLANS: PricingPlan[] = [
   {
@@ -178,7 +220,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
   },
   {
     title: 'We figure out what you actually need',
-    description: 'Website, social content, photography, or some mix of the three. Whatever fits your business.',
+    description: 'Website, mobile app, social content, photography, or some mix of them. Whatever fits your business.',
   },
   {
     title: 'I make a free homepage mockup or content plan',
@@ -213,7 +255,12 @@ export const CONTACT_FAQS: Faq[] = [
   {
     question: 'Can you manage my Instagram and Facebook?',
     answer:
-      'Yes. Social media management is one of the three main things I do. That covers posts, captions, scheduling, and short-form video on Instagram and Facebook.',
+      'Yes. Social media management is one of the main things I do. That covers posts, captions, scheduling, and short-form video on Instagram and Facebook.',
+  },
+  {
+    question: 'Can you build a mobile app for my business?',
+    answer:
+      'Yes. I build custom iOS and Android apps for local businesses. Depending on what you need, an app can include customer accounts, online ordering, booking and scheduling, payments, rewards, push notifications, and a dashboard on your end. App projects start at $2,500 and the final price depends on what the app has to do.',
   },
   {
     question: 'Do you take the photos?',

@@ -1,4 +1,4 @@
-// Shared line icons for the three core services. Decorative; callers label them.
+// Shared line icons for the four core services. Decorative; callers label them.
 
 export function WebsiteIcon({ className = 'h-6 w-6' }: { className?: string }) {
   return (
@@ -6,6 +6,16 @@ export function WebsiteIcon({ className = 'h-6 w-6' }: { className?: string }) {
       <rect x="3" y="4" width="18" height="16" rx="2" strokeWidth={1.7} />
       <path strokeLinecap="round" strokeWidth={1.7} d="M3 9h18" />
       <path strokeLinecap="round" strokeWidth={1.7} d="M6.5 6.5h.01M9 6.5h.01" />
+    </svg>
+  );
+}
+
+export function AppIcon({ className = 'h-6 w-6' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="6.5" y="2.5" width="11" height="19" rx="2.6" strokeWidth={1.7} />
+      <path strokeLinecap="round" strokeWidth={1.7} d="M10.4 5.2h3.2" />
+      <path strokeLinecap="round" strokeWidth={1.7} d="M12 18.6h.01" />
     </svg>
   );
 }
@@ -29,6 +39,7 @@ export function CameraIcon({ className = 'h-6 w-6' }: { className?: string }) {
 
 export const SERVICE_ICON = {
   websites: WebsiteIcon,
+  apps: AppIcon,
   social: SocialIcon,
   photography: CameraIcon,
 } as const;

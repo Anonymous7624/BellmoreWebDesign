@@ -144,8 +144,8 @@ export default function ContactSection() {
     <div id="mockup-form" className="scroll-mt-24 rounded-2xl bg-white border border-[#E8DED0] shadow-soft p-7 sm:p-9">
       <h2 className="text-2xl font-bold text-[#1E2A38]">Request your free mockup</h2>
       <p className="mt-1.5 text-sm text-[#5F6B73]">
-        Tell me a bit about your business. Let me know if you want a website, social media,
-        photography, or some mix of them.
+        Tell me a bit about your business. Let me know if you want a website, a mobile app, social
+        media, photography, or some mix of them.
       </p>
 
       <form onSubmit={handleSubmit} noValidate className="mt-6 space-y-5">
@@ -288,7 +288,7 @@ export default function ContactSection() {
             required
             aria-required="true"
             rows={4}
-            placeholder="What does your business do, and are you interested in a website, social media, photography, or a mix?"
+            placeholder="What does your business do, and are you interested in a website, a mobile app, social media, photography, or a mix?"
             value={formData.message}
             onChange={(e) => updateField('message', e.target.value)}
             aria-invalid={errors.message ? true : undefined}
