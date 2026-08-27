@@ -15,6 +15,10 @@ export default function FinalCTA() {
             Start with a free homepage mockup. It costs nothing and you are not signing up for anything.
             You see the idea first, then decide.
           </p>
+          <p className="mt-3 text-base text-white/55 max-w-xl mx-auto">
+            Thinking about a mobile app instead? Tell me what it needs to do and I will put together a
+            plan and a price.
+          </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link

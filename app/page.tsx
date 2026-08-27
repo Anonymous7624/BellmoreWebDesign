@@ -17,12 +17,12 @@ import FinalCTA from '@/components/home/FinalCTA';
 export const metadata: Metadata = {
   title: 'Nassau County Web Design & Website Developer',
   description:
-    'Nassau County web designer and website developer creating custom, mobile-friendly websites for local businesses. Based in Bellmore, NY. Free homepage mockup.',
+    'Nassau County web designer and app developer creating custom, mobile-friendly websites and mobile apps for local businesses. Based in Bellmore, NY. Free homepage mockup.',
   alternates: { canonical: 'https://bellmorewebdesign.com' },
   openGraph: {
     title: 'Nassau County Web Design & Website Developer',
     description:
-      'Custom, mobile-friendly websites for Nassau County and Long Island small businesses. Based in Bellmore, NY.',
+      'Custom, mobile-friendly websites and mobile apps for Nassau County and Long Island small businesses. Based in Bellmore, NY.',
     url: 'https://bellmorewebdesign.com',
     type: 'website',
   },

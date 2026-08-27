@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { motion, useReducedMotion, type Variants } from 'motion/react';
 import { CONTACT } from '../site/siteData';
-import { WebsiteIcon, SocialIcon, CameraIcon } from '../site/ServiceIcons';
+import { WebsiteIcon, AppIcon, SocialIcon, CameraIcon } from '../site/ServiceIcons';
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -18,6 +18,7 @@ const CLARIFIERS = [
 
 const TILES = [
   { Icon: WebsiteIcon, label: 'Websites', sub: 'Custom & mobile-friendly', accent: '#4E86BC' },
+  { Icon: AppIcon, label: 'Mobile Apps', sub: 'iOS & Android, built custom', accent: '#1E2A38' },
   { Icon: SocialIcon, label: 'Social Media', sub: 'Instagram & Facebook', accent: '#6B8E6B' },
   { Icon: CameraIcon, label: 'Photo & Video', sub: 'On-site content', accent: '#C9A86A' },
 ];
@@ -62,8 +63,8 @@ export default function HomeHero() {
             </motion.h1>
 
             <motion.p variants={item} className="text-lg text-[#5F6B73] mb-8 leading-relaxed max-w-xl">
-              I design and develop custom, mobile-friendly websites for businesses across Nassau County
-              and Long Island, with social media, photography, and content available too.
+              I design and develop custom, mobile-friendly websites and mobile apps for businesses across
+              Nassau County and Long Island, with social media, photography, and content available too.
             </motion.p>
 
             <motion.div variants={item} className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
@@ -104,7 +105,7 @@ export default function HomeHero() {
             </motion.ul>
           </motion.div>
 
-          {/* Three-service visual */}
+          {/* Service lineup visual */}
           <motion.div
             initial={reduce ? { opacity: 1 } : { opacity: 0, y: 30, filter: 'blur(8px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -116,11 +117,11 @@ export default function HomeHero() {
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#6FA8DC] mb-4">
                 What I set up for you
               </p>
-              <div className="space-y-3">
+              <div className="space-y-2.5 sm:space-y-3">
                 {TILES.map(({ Icon, label, sub, accent }) => (
                   <div
                     key={label}
-                    className="flex items-center gap-4 rounded-2xl border border-[#EFE7DA] bg-[#FFFDF7] p-4"
+                    className="flex items-center gap-4 rounded-2xl border border-[#EFE7DA] bg-[#FFFDF7] p-3.5 sm:p-4"
                   >
                     <span
                       className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-white shadow-soft"
@@ -136,7 +137,7 @@ export default function HomeHero() {
                 ))}
               </div>
               <div className="mt-5 flex items-center justify-between rounded-2xl bg-[#1E2A38] px-5 py-4 text-white">
-                <span className="text-sm font-medium text-white/85">It&apos;s just me, doing all three</span>
+                <span className="text-sm font-medium text-white/85">It&apos;s just me, doing all of it</span>
                 <Link href="/#services" className="text-sm font-semibold text-[#9CC3E6] hover:text-white transition-colors">
                   See services →
                 </Link>

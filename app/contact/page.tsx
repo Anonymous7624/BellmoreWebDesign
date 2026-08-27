@@ -13,12 +13,12 @@ import { CONTACT_FAQS } from '@/components/site/offerings';
 export const metadata: Metadata = {
   title: 'Contact a Nassau County Web Designer',
   description:
-    'Contact a Nassau County web designer for a free homepage mockup. Custom websites, redesigns, social media, and photography for local businesses.',
+    'Contact a Nassau County web designer for a free homepage mockup. Custom websites, redesigns, mobile apps, social media, and photography for local businesses.',
   alternates: { canonical: 'https://bellmorewebdesign.com/contact' },
   openGraph: {
     title: 'Contact a Nassau County Web Designer | Bellmore Web Design',
     description:
-      'Request a free homepage mockup. Website, social media, and photography plans for local businesses.',
+      'Request a free homepage mockup. Website, mobile app, social media, and photography plans for local businesses.',
     url: 'https://bellmorewebdesign.com/contact',
     type: 'website',
   },
@@ -39,6 +39,7 @@ const OFFER_POINTS = [
   'The completed website is paid',
   'No commitment to request the mockup',
   'Website-only services available',
+  'Mobile app projects available',
   'Social-media-only services available',
   'Combined plans available',
 ];
